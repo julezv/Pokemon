@@ -19,7 +19,8 @@ public class Slugma extends Pokemon {
         setStats(40, 40, 40, 40, 70 ,20);
         setType(Type.FIRE);
         setMove(new ConfideMove(Type.NORMAL, 0.0, 20),
-                new BodySlamMove(Type.NORMAL, 85, 100));
+                new BodySlamMove(Type.NORMAL, 85, 100),
+                new FacadeMove(Type.NORMAL, 70, 100));
 
     }
 
