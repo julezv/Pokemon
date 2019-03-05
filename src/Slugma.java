@@ -1,5 +1,4 @@
 import ru.ifmo.se.pokemon.*;
-import java.util.List;
 
 
 /**
@@ -19,7 +18,8 @@ public class Slugma extends Pokemon {
         super("slugma baby pokemon", 1);
         setStats(40, 40, 40, 40, 70 ,20);
         setType(Type.FIRE);
-        setMove(new Confide(Type.NORMAL, 0.0, 20));
+        setMove(new ConfideMove(Type.NORMAL, 0.0, 20),
+                new BodySlamMove(Type.NORMAL, 85, 100));
 
     }
 

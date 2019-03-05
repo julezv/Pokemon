@@ -9,8 +9,10 @@ public class Shiftry extends Nuzleaf{
         setStats(90, 100, 60, 90, 60, 80);
         setType(Type.GRASS);
         setType(Type.DARK);
-        setMove(new Swagger(Type.NORMAL, 0.0, 85),
-                new Confide(Type.NORMAL, 0.0, 20));
+        setMove(new SwaggerMove(Type.NORMAL, 0.0, 85),
+                new ConfideMove(Type.NORMAL, 0.0, 20),
+                new RockTombMove(Type.ROCK,60, 95),
+                new GrowthMove(Type.NORMAL, 0.0, 100));
     }
     public Shiftry(String name, int level) {
         super(name, level);
