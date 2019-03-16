@@ -6,19 +6,25 @@ import ru.ifmo.se.pokemon.*;
 //effects : Facade deals damage, and hits with double power (140) if the user is burned, poisoned or paralyzed.
 public class FacadeMove extends PhysicalMove {
     public FacadeMove() {
-        super();
+        super(Type.NORMAL, 70, 100);
     }
-    public FacadeMove(Type type, double pow, double acc) {
-        super(type, pow, acc);
-    }
-    public FacadeMove(Type type, double pow, double acc, int priority, int hits){
-        super(type, pow, acc, priority, hits);
-    }
+
     @Override
+    protected String describe() {
+        return "использует атаку Facade Move";
+    }
+
+    /*@Override
     protected void applySelfEffects(Pokemon p){
         if (p.getCondition() == Status.BURN || p.getCondition() == Status.POISON || p.getCondition() == Status.PARALYZE){
             //TODO double power
         }
+    }*/
 
+    @Override
+    protected double calcBaseDamage(Pokemon pokemon, Pokemon pokemon1) {
+        if (pokemon.getCondition() == Status.BURN)
+            return 2 * super.calcBaseDamage(pokemon, pokemon1);
+        return super.calcBaseDamage(pokemon, pokemon1);
     }
 }
