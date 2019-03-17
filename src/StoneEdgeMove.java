@@ -8,13 +8,11 @@ import ru.ifmo.se.pokemon.*;
 
 public class StoneEdgeMove extends PhysicalMove{
     public StoneEdgeMove() {
-        super();
+        super(Type.ROCK, 100, 80);
     }
-    public StoneEdgeMove(Type type, double pow, double acc) {
-        super(type, pow, acc);
-    }
-    public StoneEdgeMove(Type type, double pow, double acc, int priority, int hits){
-        super(type, pow, acc, priority, hits);
+    @Override
+    protected String describe() {
+        return "Attack with Stone Edge Move";
     }
     @Override
     protected double calcCriticalHit(Pokemon att,

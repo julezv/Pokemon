@@ -6,12 +6,12 @@ import ru.ifmo.se.pokemon.Type;
  */
 public class EnergyBallMove extends SpecialMove {
     public EnergyBallMove() {
-        super();
+        super(Type.GRASS, 90, 100);
     }
-    public EnergyBallMove(Type type, double pow, double acc) {
-        super(type, pow, acc);
+
+    @Override
+    protected String describe() {
+        return "Attack with Energy Ball Move";
     }
-    public EnergyBallMove(Type type, double pow, double acc, int priority, int hits){
-        super(type, pow, acc, priority, hits);
-    }
+
 }

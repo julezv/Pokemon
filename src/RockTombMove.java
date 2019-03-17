@@ -11,16 +11,15 @@ import ru.ifmo.se.pokemon.Type;
 
 public class RockTombMove extends PhysicalMove {
     public RockTombMove() {
-        super();
-    }
-    public RockTombMove(Type type, double pow, double acc) {
-        super(type, pow, acc);
-    }
-    public RockTombMove(Type type, double pow, double acc, int priority, int hits){
-        super(type, pow, acc, priority, hits);
+        super(Type.ROCK,60, 95);
     }
     @Override
     protected void applyOppEffects(Pokemon p){
         p.setMod(Stat.SPEED, -1) ;
+    }
+
+    @Override
+    protected String describe() {
+        return "Attack with Rock Tomb Move";
     }
 }

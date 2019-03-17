@@ -6,12 +6,12 @@ import ru.ifmo.se.pokemon.Type;
  */
 public class ThunderMove extends SpecialMove{
     public ThunderMove() {
-        super();
+        super(Type.ELECTRIC, 110, 70);
     }
-    public ThunderMove(Type type, double pow, double acc) {
-        super(type, pow, acc);
+
+    @Override
+    protected String describe() {
+        return "Attack with Thunder Move";
     }
-    public ThunderMove(Type type, double pow, double acc, int priority, int hits){
-        super(type, pow, acc, priority, hits);
-    }
+
 }

@@ -18,11 +18,9 @@ public class MainClass {
         Slugma magcargo = new Magcargo();
         System.out.println(magcargo);
 
-        b.addAlly(slugma);
-        b.addFoe(new Mewtwo());
+        b.addFoe(new Mewtwo("Mewtwo strong pokemon", 3));
+        b.addAlly(new Shiftry("Shiftry little pokemmon", 2));
         b.go();
-
-
 
     }
 

@@ -8,16 +8,16 @@ import ru.ifmo.se.pokemon.Type;
  */
 public class ConfideMove extends StatusMove {
     public ConfideMove() {
-        super();
+        super(Type.NORMAL, 0.0, 20);
     }
-    public ConfideMove(Type type, double pow, double acc) {
-        super(type, pow, acc);
-    }
-    public ConfideMove(Type type, double pow, double acc, int priority, int hits){
-        super(type, pow, acc, priority, hits);
-    }
+
     @Override
-    protected void applyOppEffects(Pokemon p){
+    protected void applyOppEffects(Pokemon p) {
         p.setMod(Stat.SPECIAL_ATTACK, -1) ;
+    }
+
+    @Override
+    protected String describe() {
+        return "Attack with Confide Move";
     }
 }

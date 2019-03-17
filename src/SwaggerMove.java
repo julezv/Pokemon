@@ -10,14 +10,13 @@ import ru.ifmo.se.pokemon.*;
 
 public class SwaggerMove extends StatusMove {
     public SwaggerMove() {
-        super();
+        super(Type.NORMAL, 0.0, 85);
     }
-    public SwaggerMove(Type type, double pow, double acc) {
-        super(type, pow, acc);
+    @Override
+    protected String describe() {
+        return "Attack with Swagger Move";
     }
-    public SwaggerMove(Type type, double pow, double acc, int priority, int hits){
-        super(type, pow, acc, priority, hits);
-    }
+
     @Override
     protected void applyOppEffects(Pokemon p){
         if(p.getStat(Stat.ATTACK) < 5){

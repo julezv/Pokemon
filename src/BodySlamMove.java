@@ -9,13 +9,7 @@ import ru.ifmo.se.pokemon.*;
 
 public class BodySlamMove extends PhysicalMove{
     public BodySlamMove() {
-        super();
-    }
-    public BodySlamMove(Type type, double pow, double acc) {
-        super(type, pow, acc);
-    }
-    public BodySlamMove(Type type, double pow, double acc, int priority, int hits){
-        super(type, pow, acc, priority, hits);
+        super(Type.NORMAL, 85, 100);
     }
     @Override
     protected void applyOppEffects(Pokemon p){
@@ -24,4 +18,9 @@ public class BodySlamMove extends PhysicalMove{
         // ?
         // why can do p.paralyze() and Effect.paralyze(p)
     }
+    @Override
+    protected String describe() {
+        return "Attack with Body Slam Move";
+    }
+
 }

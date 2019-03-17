@@ -11,15 +11,8 @@ public class FacadeMove extends PhysicalMove {
 
     @Override
     protected String describe() {
-        return "использует атаку Facade Move";
+        return "attack with Facade Move";
     }
-
-    /*@Override
-    protected void applySelfEffects(Pokemon p){
-        if (p.getCondition() == Status.BURN || p.getCondition() == Status.POISON || p.getCondition() == Status.PARALYZE){
-            //TODO double power
-        }
-    }*/
 
     @Override
     protected double calcBaseDamage(Pokemon pokemon, Pokemon pokemon1) {

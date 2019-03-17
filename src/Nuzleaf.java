@@ -5,17 +5,25 @@ import ru.ifmo.se.pokemon.Type;
  */
 public class Nuzleaf extends Seedot {
 
-    public Nuzleaf() {
-        super("Nuzleaf pokemon", 3);
+    public Nuzleaf(){
+        super();
+        initNuzleaf();
+    }
+
+    public Nuzleaf(String name, int level) {
+
+        super(name, level);
+        initNuzleaf();
+    }
+
+    public void initNuzleaf() {
         setStats(70, 70, 40, 60, 40, 60);
         setType(Type.GRASS);
         setType(Type.DARK);
-        setMove(new SwaggerMove(Type.NORMAL, 0.0, 85),
-                new ConfideMove(Type.NORMAL, 0.0, 20),
-                new GrowthMove(Type.NORMAL, 0.0, 100));
+        setMove(new SwaggerMove(),
+                new ConfideMove(),
+                new GrowthMove());
     }
-    public Nuzleaf(String name, int level) {
-        super(name, level);
-    }
+
 }
 

@@ -8,18 +8,15 @@ import ru.ifmo.se.pokemon.Type;
  */
 public class GrowthMove extends StatusMove{
     public GrowthMove() {
-        super();
+        super(Type.NORMAL, 0.0, 100);
     }
-    public GrowthMove(Type type, double pow, double acc) {
-        super(type, pow, acc);
-    }
-    public GrowthMove(Type type, double pow, double acc, int priority, int hits){
-        super(type, pow, acc, priority, hits);
-    }
-
     @Override
     protected void applySelfEffects(Pokemon p){
         p.setMod(Stat.SPECIAL_ATTACK, +1);
         p.setMod(Stat.ATTACK, +1);
+    }
+    @Override
+    protected String describe() {
+        return "Attack with Growth Move";
     }
 }
