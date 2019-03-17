@@ -25,5 +25,6 @@ public class StoneEdgeMove extends PhysicalMove{
         }
 
     }
+    // if deals damage I cdo not need to override the calcBaseDamage method..
 
 }
