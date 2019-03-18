@@ -7,6 +7,7 @@ import ru.ifmo.se.pokemon.*;
 // Electric type Pokémon, those with the
 // ability Limber or those behind a Substitute cannot be paralyzed.
 
+//MA: TODO: 30% + paralize Effect
 public class BodySlamMove extends PhysicalMove{
     public BodySlamMove() {
         super(Type.NORMAL, 85, 100);
