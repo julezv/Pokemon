@@ -3,7 +3,10 @@ import ru.ifmo.se.pokemon.*;
 /**
  * Created by yuliav on 05/03/2019.
  */
-// effects : Stone Edge deals damage and has an increased critical hit ratio (1⁄8 instead of 1⁄16).
+
+/**
+ * Stone Edge deals damage and has an increased critical hit ratio (1⁄8 instead of 1⁄16).
+ */
 
 
 public class StoneEdgeMove extends PhysicalMove{
@@ -25,6 +28,6 @@ public class StoneEdgeMove extends PhysicalMove{
         }
 
     }
-    // if deals damage I cdo not need to override the calcBaseDamage method..
+    // if deals damage I do not need to override the calcBaseDamage method..
 
 }

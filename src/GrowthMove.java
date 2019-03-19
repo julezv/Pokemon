@@ -6,6 +6,14 @@ import ru.ifmo.se.pokemon.Type;
 /**
  * Created by yuliav on 04/03/2019.
  */
+
+/**
+ *
+ * Growth raises the user's Attack and Special Attack by one stage each.
+ * During harsh sunlight it raises each stat by two stages.
+ * Stats can be raised to a maximum of +6 stages each
+ */
+
 public class GrowthMove extends StatusMove{
     public GrowthMove() {
         super(Type.NORMAL, 0.0, 100);

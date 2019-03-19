@@ -7,6 +7,11 @@ import ru.ifmo.se.pokemon.Type;
  * Created by yuliav on 03/03/2019.
  */
 
+/*
+* Confide lowers the target's Special Attack by one stage.
+Stats can be lowered to a minimum of -6 stages each.
+* */
+
 //MA: OK
 public class ConfideMove extends StatusMove {
     public ConfideMove() {

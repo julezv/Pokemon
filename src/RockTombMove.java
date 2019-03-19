@@ -7,7 +7,9 @@ import ru.ifmo.se.pokemon.Type;
  * Created by yuliav on 04/03/2019.
  */
 
-// effects: Rock Tomb deals damage and lowers the target's Speed by one stage.
+/**
+ * Rock Tomb deals damage and lowers the target's Speed by one stage.
+ */
 
 public class RockTombMove extends PhysicalMove {
     public RockTombMove() {
