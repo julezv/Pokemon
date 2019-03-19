@@ -6,6 +6,8 @@ import ru.ifmo.se.pokemon.Type;
 /**
  * Created by yuliav on 03/03/2019.
  */
+
+//MA: OK
 public class ConfideMove extends StatusMove {
     public ConfideMove() {
         super(Type.NORMAL, 0.0, 20);
