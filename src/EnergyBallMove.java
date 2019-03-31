@@ -8,7 +8,6 @@ import ru.ifmo.se.pokemon.*;
 * lowering the target's Special Defense by one stage.
 * */
 
-//MA: TODO: Energy Ball deals damage and has a 10% chance of lowering the target's Special Defense by one stage.
 public class EnergyBallMove extends SpecialMove {
     public EnergyBallMove() {
         super(Type.GRASS, 90, 100);
@@ -21,7 +20,7 @@ public class EnergyBallMove extends SpecialMove {
 
     @Override
     protected void applyOppEffects(Pokemon p){
-        Effect LowerSpecialDefense = new Effect().chance(0.1).stat(Stat.SPECIAL_DEFENSE, -1);;
+        Effect LowerSpecialDefense = new Effect().chance(0.1).stat(Stat.SPECIAL_DEFENSE, -1);
         p.setCondition(LowerSpecialDefense);
     }
 }
