@@ -11,7 +11,6 @@ public class MainClass {
         Pokemon p1 = new Slugma("Alien", 1);
         Pokemon p2 = new Pokemon("Predator", 1);
 
-
         Slugma slugma = new Slugma("Slugma baby pokemon", 1);
         System.out.println(slugma);
 

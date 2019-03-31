@@ -5,8 +5,8 @@ import ru.ifmo.se.pokemon.Type;
  */
 public class Magcargo extends Slugma {
     public Magcargo() {
-    super();
-    initMagcargo();
+        super();
+        initMagcargo();
     }
 
     public Magcargo(String name, int level) {
